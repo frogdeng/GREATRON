@@ -1,0 +1,75 @@
+@import "bourbon";
+@import "susy";
+@import _map.scss
+
+
+
+// shorthand
+$desktop: 12 (90px 30px) split
+$pad: 6 (80px 40px) split
+
+$w_desktop: 12 split
+$w_pad: 6 split
+
+$breakpoint_desktop: 991px
+$breakpoint_pad: 0 990px
+
+$susy: (debug: (image: hide))
+
+
+
+.indside_banner
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		background: url(../img/banner_01.png) center
+		background-size: cover
+		height: 280px
+		display: flex
+		justify-content: center
+		align-items: center
+	
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		background: url(../img/banner_01.png) center
+		background-size: cover
+		height: 400px
+		display: flex
+		justify-content: center
+		align-items: center
+		h2
+			color: #7ED321
+			font-size: 40px
+			text-align: center
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
