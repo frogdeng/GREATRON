@@ -4,7 +4,7 @@
 
 
 // shorthand
-$desktop: 12 (90px 30px) split
+$desktop: 12 (70px 30px) split
 $pad: 6 (80px 40px) split
 
 $w_desktop: 12 split
@@ -15,6 +15,95 @@ $breakpoint_pad: 0 890px
 
 
 $susy: (debug: (image: hide))
+
+
+$green: #7ED321
+$deep-green: #5AB331
+
+
+.inex_des
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 0 100px
+		
+		h5
+			font-size: 30px
+			text-align: center
+			margin-bottom: 20px
+			font-weight: 700
+			color: #555
+		p 
+			font-size: 18px
+			color: #8C8C8C
+
+		.g_line
+			width: 80px
+			height: 6px
+			margin: 30px auto
+			margin-bottom: 80px
+			background: $green
+
+
+
+
+
+.product_info
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		.product_intro
+			+span(3)
+			margin-top: 50px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			padding: 0 20px
+			margin-bottom: 90px
+			img
+				display: block
+				margin-bottom: 20px
+				width: 90%
+			h6
+				font-size: 16px
+				color: #888
+				text-align: center
+				margin-bottom: 10px
+				font-weight: 700
+				line-height: 1.4
+
+			p 
+				font-size: 14px
+				color: #888
+				text-align: center
+				margin-bottom: 20px
+			.p-more
+				display: block
+				border: 1px solid $green
+				padding: 3px 25px
+				width: 60%
+				color: $green
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				transition: all .3s
+				&:hover
+					background: $green
+					color: #FFF
+
+
 
 
 
