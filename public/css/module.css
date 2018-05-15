@@ -162,7 +162,8 @@ a {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 100px; }
+    padding: 0 100px;
+    margin-top: 90px; }
   .inex_des:after {
     content: " ";
     display: block;
@@ -296,7 +297,7 @@ a {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 100px; }
+    margin-bottom: 50px; }
   .indside_banner:after {
     content: " ";
     display: block;
