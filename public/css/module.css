@@ -399,6 +399,102 @@ a {
     font-size: 16px;
     color: #888; } }
 
+@media (min-width: 0) and (max-width: 990px) {
+  .product_menu {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto; }
+  .product_menu:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 991px) {
+  .product_menu {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto; }
+  .product_menu:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .product_menu .product_title {
+    background: #5AB331;
+    color: #FFF;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 2px solid #FFF;
+    cursor: pointer; }
+  .product_menu .product_list {
+    padding: 0 5px;
+    display: none; }
+  .product_menu .product_list ul li a {
+    display: block;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #FFF;
+    line-height: 1.4;
+    background: #EDF9E7;
+    color: #656565;
+    transition: all .2s; }
+  .product_menu .product_list ul li a:hover {
+    background: #222;
+    color: #FFF;
+    transform: scale(1.05);
+    border-bottom: 1px solid #222; } }
+
+.display_down {
+  display: block !important; }
+
+@media (min-width: 0) and (max-width: 990px) {
+  .product_block {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto; }
+  .product_block:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 991px) {
+  .product_block {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 30px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee; }
+  .product_block:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .product_block .product_photo {
+    width: 400px;
+    margin-right: 20px; }
+  .product_block .product_photo img {
+    display: block;
+    width: 100%; }
+  .product_block .product_info h6 {
+    font-size: 30px;
+    color: #5AB331;
+    margin-bottom: 20px; }
+  .product_block .product_info p {
+    font-size: 18px; }
+  .product_block .product_info .spec {
+    margin-top: 20px; }
+  .product_block .product_info .spec p {
+    font-size: 16px;
+    color: #888; } }
+
 body {
   background: #FFF;
   font-family: 'Noto Sans', sans-serif, Microsoft JhengHei;

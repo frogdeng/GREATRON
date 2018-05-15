@@ -84,11 +84,9 @@ $susy: (debug: (image: hide))
 
 
 
-
 .about_menu
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-
 
 
 
@@ -107,13 +105,9 @@ $susy: (debug: (image: hide))
 
 
 
-
-
-
 .about_content
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-
 
 
 
@@ -131,6 +125,96 @@ $susy: (debug: (image: hide))
 			p
 				font-size: 16px
 				color: #888
+
+
+
+
+.product_menu
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		.product_title
+			background: $deep-green
+			color: #FFF
+			padding: 15px 25px
+			font-size: 18px
+			font-weight: 700
+			border-bottom: 2px solid #FFF
+			cursor: pointer
+
+		.product_list
+			padding: 0 5px
+			display: none
+			
+			ul
+				li
+					a
+						display: block
+						font-size: 16px
+						padding: 10px 20px
+						border-bottom: 1px solid #FFF
+						line-height: 1.4
+						background: #EDF9E7
+						color: #656565
+						transition: all .2s
+						&:hover
+							background: #222
+							color: #FFF
+							transform: scale(1.05)
+							border-bottom: 1px solid #222
+
+
+
+.display_down
+	display: block !important
+	
+
+
+
+
+.product_block
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: flex-start
+		padding: 30px 0
+		margin-bottom: 20px
+		border-bottom: 1px solid #eee
+		.product_photo
+			width: 400px
+			margin-right: 20px
+			img
+				display: block
+				width: 100%	
+		
+		.product_info
+			h6
+				font-size: 30px
+				color: $deep_green
+				margin-bottom: 20px
+			p 
+				font-size: 18px
+
+			.spec
+				margin-top: 20px
+				p 
+					font-size: 16px
+					color: #888
+
+
+
+
 
 
 
