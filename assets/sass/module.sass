@@ -235,9 +235,14 @@ header
 			align-items: center
 			li
 				position: relative
+				display: flex
+				flex-direction: column
+				justify-content: flex-end
+				align-items: center
+				transition: all .3s
 				a
 					display: block
-					height: 50px
+					height: 40px
 					color: #FFF
 					padding: 0 22px
 					font-size: 18px
@@ -246,10 +251,49 @@ header
 					flex-direction: row
 					justify-content: flex-end
 					align-items: center
-					&:hover
+					transition: all .3s
+				.b_line
+					width: 30px
+					height: 5px
+					background: $green
+					opacity: 0
+					transition: all .3s
+				&:hover
+					a
 						color: #7ED321
+					.b_line
+						opacity: 1
 
-				
+				ul
+					position: absolute
+					display: block
+					width: 140px
+					z-index: 1000
+					visibility: hidden
+					opacity: 0
+					top: 60px
+					left: 0px
+					transition: all .3s
+					a
+						display: block
+						height: auto
+						width: 140px
+						color: $green !important
+						background: rgba(47, 148, 0, .7)
+						border-bottom: 1px solid rgba(255, 255, 255, .3)
+						line-height: 1.5
+						font-size: 13px
+						padding: 10px 0
+						text-align: center
+						transition: all .3s
+						&:hover
+							background: rgba(47, 148, 0, 1)
+							color: #FFF !important
+
+				&:hover
+					ul
+						visibility: visible
+						opacity: 1
 	
 
 
@@ -321,6 +365,7 @@ header
 	background: #222
 	background-size: cover
 	padding: 20px 0
+	margin-top: 50px
 
 
 
@@ -335,10 +380,7 @@ footer
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		padding: 10px 80px
-		
 		.footer_link
-			padding: 10px 0
 			margin-bottom: 20px
 			a
 				margin-right: 35px
@@ -348,12 +390,14 @@ footer
 
 
 		.copyright
-			padding: 20px 0
+			padding: 10px 0
 			p
 				color: #C9C9C9
 				font-size: 14px
 				line-height: 1.5
 				margin-bottom: 3px
+				text-align: center
+				
 
 
 
