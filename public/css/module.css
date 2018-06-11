@@ -1037,7 +1037,7 @@ a {
   zoom: 1; }
 
 .header_wrapper {
-  background: black;
+  background: #3c3c3c;
   background-repeat: no-repeat;
   width: 100%; }
 
@@ -1308,7 +1308,7 @@ a {
     height: 40px;
     color: #FFF;
     padding: 0 22px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     display: -ms-flexbox;
     display: flex;
@@ -1320,13 +1320,14 @@ a {
     align-items: center;
     transition: all .3s; }
   .deskmenu ul li .b_line {
-    width: 30px;
+    width: 68%;
     height: 5px;
     background: #7ED321;
     opacity: 0;
     transition: all .3s; }
   .deskmenu ul li:hover a {
-    color: #7ED321; }
+    color: #7ED321;
+    transform: scale(1.07); }
   .deskmenu ul li:hover .b_line {
     opacity: 1; }
   .deskmenu ul li ul {
