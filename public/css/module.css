@@ -1595,6 +1595,61 @@ a {
   padding: 20px;
   margin-bottom: 20px; }
 
+.product-item table tr {
+  border-bottom: 1px solid #c0c0c0; }
+
+.product-item table tr td {
+  padding: 10px;
+  vertical-align: top;
+  color: #888;
+  font-size: 14px; }
+
+.product-item table tr td .btn {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.product-item table tr td .btn .edit {
+  width: 100px;
+  height: 30px;
+  margin: 0 10px;
+  border-radius: 3px;
+  background: #5AB331;
+  color: #FFF;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px; }
+
+.product-item table tr td .btn .cancel {
+  width: 100px;
+  height: 30px;
+  margin: 0 10px;
+  border-radius: 3px;
+  background: red;
+  color: #FFF;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .product-item .itme-num {
   font-size: 20px;
   color: #FFF;
