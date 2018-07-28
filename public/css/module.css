@@ -512,6 +512,12 @@ a {
     float: left;
     margin-left: 2.77778%;
     margin-right: 2.77778%;
+    padding: 0 20px; }
+  .main_content .search_result {
+    width: 94.44444%;
+    float: left;
+    margin-left: 2.77778%;
+    margin-right: 2.77778%;
     padding: 0 20px; } }
 
 @media (min-width: 991px) {
@@ -532,6 +538,12 @@ a {
     padding: 0 20px; }
   .main_content .content {
     width: 72.91667%;
+    float: left;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+    padding: 0 20px; }
+  .main_content .search_result {
+    width: 97.91667%;
     float: left;
     margin-left: 1.04167%;
     margin-right: 1.04167%;
