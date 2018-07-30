@@ -1,0 +1,64 @@
+{# index.twig #}
+{% extends "/_template/backend_layout.twig" %}
+{% block page %}
+
+
+<div class="backend_wrapper">
+    <a class="addproduct" href="/backend/add-product"><i class="fa fa-plus"></i>  Add Product</a>
+    <div class="product-item">
+        <form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Index Products</th>
+                        <th>New Product</th>
+                        <th>Category</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Spec.</th>
+                        <th>Feature(others)</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>
+                            <select name="isIndex" initialvalue="">
+                                <option value=""></option>
+                                <option value="true">Index Product</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select name="isNew" initialvalue="">
+                                <option value=""></option>
+                                <option value="true">New Product</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select class="index_1" name="category" initialvalue="">
+                                <option value=""></option>
+                                <option value="DESKTOP">DESKTOP</option>
+                                <option value="WALLPLUG">WALLPLUG</option>
+                                <option value="USBCHARGER">USBCHARGER</option>
+                                <option value="WIRELESS">WIRELESS</option>
+                            </select>
+                        </th>
+                        <th>
+                            <input class="index_1" type="text" name="name" initialvalue="" value="">
+                        </th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th>
+                            <button type="button">Reset</button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}x
